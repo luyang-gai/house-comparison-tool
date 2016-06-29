@@ -1,0 +1,19 @@
+{
+  "name": "house-comparison-tool",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "angular-ui-router": "^0.3.1",
+    "bower": "^1.7.9",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-connect": "^4.1.0",
+    "gulp-sass": "^2.3.2"
+  }
+}
