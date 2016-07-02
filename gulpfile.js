@@ -35,7 +35,7 @@ gulp.task('concatAndBuildCss', function () {
 gulp.task('watch', function () {
     gulp.watch(['./app/**/*.html'], ['html']);
     gulp.watch(['./app/**/*.js'], ['js']);
-    gulp.watch(['./app/**/*.scss'], ['scss']);
+    gulp.watch(['./app/**/*.scss'], ['concatAndBuildCss']);
 });
 
 gulp.task('serve', ['concatAndBuildCss', 'connect', 'watch']);

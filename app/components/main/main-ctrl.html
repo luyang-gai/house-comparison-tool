@@ -1,3 +1,12 @@
-<div>
-    {{ helloWorld }}
-</div>
+<table class="table">
+  <thead class="match-info-thead">
+    <tr>
+      <th ng-repeat="column in tableColumns" ng-click="order(column)">{{ displayColumnTitle(column) }}</th>
+    </tr>
+  </thead>
+  <tbody>
+  <tr ng-repeat="house in housingData | filter: {$: query} | orderBy:predicate:reverse ">
+    <td ng-repeat="column in tableColumns">{{ displayValue(house, column) }}</td>
+  </tbody>
+</table>
+<button class="createHousingForm" ng-click="openHouseFormModal()">Add House</button>

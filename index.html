@@ -1,20 +1,34 @@
 <!doctype html>
 <html lang="en" ng-app="HousingComparisonTool">
 <head>
-    <meta charset="utf-8">
-    <title>My HTML File</title>
+  <meta charset="utf-8">
+  <title>My HTML File</title>
+  <script src="app/assets/bower_components/angular/angular.js"></script>
 
-    <script src="app/assets/bower_components/angular/angular.js"></script>
-    <script src="node_modules/angular-ui-router/release/angular-ui-router.js"></script>
-    <script src="app.js"></script>
+  <script src="node_modules/angular-ui-router/release/angular-ui-router.js"></script>
 
-    <!--COMPONENTS-->
-    <script src="app/components/main/main-ctrl.js"></script>
+  <script src="app/assets/bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+  <script src="app/assets/bower_components/angular-animate/angular-animate.js"></script>
+  <script src="app/assets/bower_components/angular-touch/angular-touch.js"></script>
+
+  <script src="app.js"></script>
+
+  <!--STYLES-->
+  <link href="app/assets/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="dist/styles/test.css" rel="stylesheet">
+
+
+  <!--COMPONENTS-->
+  <script src="app/components/main/main-ctrl.js"></script>
+  <script src="app/components/house-form/house-form-ctrl.js"></script>
+
+  <!--SERVICES-->
+  <script src="app/services/housing-factory/housing-factory.js"></script>
 </head>
 
 <body>
 <div class="ui-view-container">
-    <div ui-view></div>
+  <div ui-view></div>
 </div>
 </body>
 

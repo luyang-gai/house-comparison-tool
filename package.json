@@ -10,10 +10,13 @@
   "license": "ISC",
   "devDependencies": {
     "angular-ui-router": "^0.3.1",
+    "body-parser": "^1.15.2",
     "bower": "^1.7.9",
+    "express": "^4.14.0",
     "gulp": "^3.9.1",
     "gulp-concat": "^2.6.0",
     "gulp-connect": "^4.1.0",
-    "gulp-sass": "^2.3.2"
+    "gulp-sass": "^2.3.2",
+    "mongodb": "^2.1.18"
   }
 }

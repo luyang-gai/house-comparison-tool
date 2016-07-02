@@ -1,0 +1,25 @@
+<div class="modal">
+  <div class="modal-header">
+    <div class="modal-title">Add a Home</div>
+  </div>
+  <div class="modal-stuffer">
+    <img ng-src="http://images.clipartpanda.com/brick-house-clipart-RcdAj5Xc9.png"/>
+    <div class="modal-stuffer-text">This home will show up on your home page</div>
+  </div>
+  <div class="modal-body">
+    <div class="house-form-page">
+      <form novalidate class="simple-form">
+          <div class="form-field-container" ng-repeat="field in formFields">
+              <div class="form-field-text">{{field}}: </div>
+              <input class="form-field-input" type="text" ng-model="house[field]"/><br />
+          </div>
+      </form>
+    </div>
+  </div>
+  <div class="modal-footer">
+    <div class="buttons">
+      <button ng-click="back()">Back to main page</button>
+      <button ng-click="postForm()">Finished</button>
+    </div>
+  </div>
+</div>
